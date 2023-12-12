@@ -9,7 +9,7 @@ body {
     background-color: #f8f9fa;
 }
 
-/*******************? LAYOUT *************************/
+/*******************TODO LAYOUT *************************/
 
 .wrapper {
     height: 100vh; 
@@ -26,6 +26,7 @@ header {
     top: 0;
     right: 0;
     left: 0;
+    z-index: 1;
 }
 
 .layout {
@@ -52,6 +53,17 @@ main, nav {
 
 main {
     overflow: auto;
+    flex-grow: 1;
 }
 
-/*? ***************************************************/
+/*TODO ***************************************************/
+
+
+
+/*? MAIN */ 
+
+.header-main {
+    background-color: #1b72e8;
+    
+    height: 500px; /* di costruzione*/ 
+}
