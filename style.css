@@ -19,6 +19,8 @@ a {
     text-decoration: none;
 }
 
+/*! FONT SIZE DA CENTRALIZZARE */
+
 /*******************TODO LAYOUT *************************/
 
 .wrapper {
@@ -167,7 +169,11 @@ span.stat {
     font-weight: 500;
 }
 
+/** Sezione Graphic */
 
+img.graphic {
+    width: 100%; /*! da gestire le larghezze */
+}
 
 
 /*! *********************************************************/
