@@ -33,14 +33,17 @@ header {
     flex-grow: 1;
     overflow: auto;
 
-    background-color: aqua;
+    background-color:#f8f9fa;
 }
 
 nav {
     width: 70px;
     flex-shrink: 0;
     
-    background-color: black;
+    background-color: #051e34;
+    background-image: url(img/sidebar-bg.png);
+    background-position: center;
+    background-size: cover;
 }
 
 main, nav {
