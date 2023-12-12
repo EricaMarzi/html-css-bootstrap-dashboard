@@ -69,7 +69,7 @@ main {
 
 /*TODO ***************************************************/
 
-/*? HEADER */
+/*? HEADER **************************************/
 
 .header-h {
     height: 50px;
@@ -115,7 +115,32 @@ button {
     color: #ff8f00;
 }
 
-/*? MAIN */ 
+/*? NAV *********************************************************/
+nav {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav-top {
+    flex-grow: 1;
+}
+
+nav span {
+    margin-left: 10px;
+}
+
+span.stat {
+    margin-left: 15px;
+}
+
+.nav-bottom {
+    justify-self: end;
+}
+
+/*? MAIN ***************************************************************/ 
 
 .header-main {
     background-color: #1b72e8;
@@ -142,6 +167,20 @@ button {
     font-weight: 500;
 }
 
+
+
+
+/*! *********************************************************/
+
+@media screen and (min-width:992px) {
+    nav {
+        width: 140px;
+        font-size: 16px;
+        text-align: left;
+    }
+
+
+}
 
 @media screen and (min-width:1200px) {
     .new-student {
