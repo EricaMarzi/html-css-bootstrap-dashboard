@@ -18,14 +18,32 @@
     <div class="wrapper">
 
         <header>
-            <div class="container-fluid d-flex align-items-center header-h">
-                <img class="logo-mobile" src="img/mobile-logo.png" alt="Boolean Logo">
-                <div class="search-container">
-                    <form action="" class="d-flex">
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                        <input type="text" placeholder="Prova a cercare: Lezioni di Laravel" name="search">
-                    </form>
-                  </div>
+            <div class="container-fluid d-flex justify-content-between header-h">
+                <div class="header-left d-flex align-items-center">
+                    <img class="logo-mobile" src="img/mobile-logo.png" alt="Boolean Logo">
+                    <div class="search-container">
+                        <form action="" class="d-flex">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                            <input type="text" placeholder="Prova a cercare: Lezioni di Laravel" name="search">
+                        </form>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <ul class="icons-header d-flex gap-4">
+                        <li class="d-none d-lg-inline">
+                            <a href="#"><i class="fa-solid fa-list-ul"></i></a>
+                        </li>
+                        <li class="d-none d-lg-inline">
+                            <a href="#"><i class="fa-solid fa-circle-question"></i></a>
+                        </li>
+                        <li class="d-none d-lg-inline">
+                            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-bell"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
         </header>

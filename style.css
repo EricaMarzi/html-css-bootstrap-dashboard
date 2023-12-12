@@ -5,8 +5,18 @@
     box-sizing: border-box;
 }
 
+/** General */
+
 body {
     background-color: #f0f1f1;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 /*******************TODO LAYOUT *************************/
@@ -85,11 +95,25 @@ button {
     background-color: lightgray;
     border-radius: 0 10px 10px 0;
     border: 0px;
-    width: 600px; /*! larghezza casuale da sistemare */
+    width: 400px; /*! la larghezza casuale è da sistemare */
 
     padding-left: 10px;
 }
 
+/** Icon*/
+
+.header-right {
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+.icons-header a {
+    color: #5b5858;
+}
+
+.icons-header a .fa-bell {
+    color: #ff8f00;
+}
 
 /*? MAIN */ 
 
