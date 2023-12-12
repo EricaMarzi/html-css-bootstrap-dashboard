@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #f8f9fa;
+    background-color: #f0f1f1;
 }
 
 /*******************TODO LAYOUT *************************/
@@ -20,7 +20,8 @@ body {
 header {
     height: 70px;
     flex-shrink: 0;
-    background-color: white;
+
+    background-color: #f0f1f1;
 
     position: fixed;
     top: 0;
@@ -34,7 +35,7 @@ header {
     flex-grow: 1;
     overflow: auto;
 
-    background-color:#f8f9fa;
+    
 }
 
 nav {
@@ -58,6 +59,36 @@ main {
 
 /*TODO ***************************************************/
 
+/*? HEADER */
+
+.header-h {
+    height: 50px;
+    margin-top: 10px;
+    background-color: white;
+}
+
+header img.logo-mobile {
+    height: 50px;
+    margin-right: 20px;
+}
+/** Searchbar*/
+button {
+    border: 0px;
+    background-color: lightgray;
+    border-radius: 10px 0 0 10px;
+
+    padding-left: 10px;
+}
+
+[type="text"] {
+    height: 40px;
+    background-color: lightgray;
+    border-radius: 0 10px 10px 0;
+    border: 0px;
+    width: 600px; /*! larghezza casuale da sistemare */
+
+    padding-left: 10px;
+}
 
 
 /*? MAIN */ 
