@@ -20,7 +20,8 @@
         <header>
             <div class="container-fluid d-flex justify-content-between header-h">
                 <div class="header-left d-flex align-items-center">
-                    <img class="logo-mobile" src="img/mobile-logo.png" alt="Boolean Logo">
+                    <img class="logo-mobile d-lg-none" src="img/mobile-logo.png" alt="Boolean Logo">
+                    <img class="logo-desktop d-none d-lg-block" src="img/logo.svg" alt="Boolean Logo">
                     <div class="search-container">
                         <form action="" class="d-flex">
                             <button class="custom-btn" type="submit"><i class="fa fa-search"></i></button>
@@ -54,7 +55,16 @@
                             <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa-solid fa-bell"></i></a>
+                            <div class="btn-group">
+                                <button type="button" class="btn custom-bell" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-bell text-yellow"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                  <li><button class="dropdown-item" type="button">Profilo</button></li>
+                                  <li><button class="dropdown-item" type="button">Fatturazione</button></li>
+                                  <li><button class="dropdown-item" type="button">Logout</button></li>
+                                </ul>
+                              </div>
                         </li>
                     </ul>
                 </div>
@@ -65,22 +75,22 @@
         <div class="layout">
             <nav class="text-white px-2">
                 <div class="nav-top py-4">
-                    <div class="py-1">
+                    <div class="p-1 bg-hover">
                         <i class="fa-solid fa-house"></i>
                         <span class="home d-none d-lg-inline">Home</span>
                     </div>
-                    <div class="py-1">
+                    <div class="p-1 bg-hover">
                         <i class="fa-solid fa-chart-simple"></i>
                         <span class="stat d-none d-lg-inline">Stat</span>
                     </div>
-                    <div class="py-1">
+                    <div class="p-1 bg-hover">
                         <i class="fa-solid fa-signal"></i>
                         <span class="signal d-none d-lg-inline">Signal</span>
                     </div>
                 </div>
 
                 <div class="nav-bottom py-4">
-                    <div>
+                    <div class="p-1 bg-hover">
                         <i class="fa-solid fa-gear"></i>
                         <span class="admnin d-none d-lg-inline">Admnin</span>
                     </div>
@@ -133,7 +143,7 @@
                                 <h2>Prossime Classi</h2>
                                 </div>
                                 <div class="card-body custom-text-table">
-                                    <table class="table text-center">
+                                    <table class="table table-hover text-center">
                                         <thead>
                                         <tr>
                                             <td scope="col" class="text-start">Nome</td>

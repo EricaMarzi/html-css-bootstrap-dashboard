@@ -85,6 +85,12 @@ header img.logo-mobile {
     height: 50px;
     margin-right: 20px;
 }
+
+header img.logo-desktop {
+    height: 30px;
+    margin-right: 20px;
+}
+
 /** Searchbar*/
 .custom-btn {
     background-color: lightgray;
@@ -118,7 +124,15 @@ header img.logo-mobile {
     color: #5b5858;
 }
 
-.icons-header a .fa-bell {
+.btn.custom-bell {
+    padding: 0;
+    border: 0;
+
+    position: relative;
+    bottom: 2px; /*monnezza*/
+}
+
+.text-yellow.fa-bell {
     color: #ff8f00;
 }
 
@@ -145,6 +159,11 @@ span.stat {
 
 .nav-bottom {
     justify-self: end;
+}
+
+.bg-hover:hover {
+    background-color: rgb(155, 160, 177);
+    cursor: pointer;
 }
 
 /*? MAIN ***************************************************************/ 
@@ -205,6 +224,7 @@ span.stat {
     color: #6c757d;
     border: 1px solid #6c757d ;
 }
+
 
 /** Sezione Graphic */
 
