@@ -23,6 +23,7 @@ a {
 
 /*******************TODO LAYOUT *************************/
 
+
 .wrapper {
     height: 100vh; 
     display: flex;
@@ -69,6 +70,7 @@ main {
     flex-grow: 1;
 }
 
+
 /*TODO ***************************************************/
 
 /*? HEADER **************************************/
@@ -84,23 +86,26 @@ header img.logo-mobile {
     margin-right: 20px;
 }
 /** Searchbar*/
-button {
-    border: 0px;
+.custom-btn {
     background-color: lightgray;
     border-radius: 10px 0 0 10px;
+    border: 0;
 
     padding-left: 10px;
 }
 
-[type="text"] {
+
+[type="search"] {
     height: 40px;
     background-color: lightgray;
     border-radius: 0 10px 10px 0;
-    border: 0px;
-    width: 400px; /*! la larghezza è casuale, DA SISTEMARE */
+    border: 0;
+    width: 400px;  /*! la larghezza è casuale, DA SISTEMARE */
+    
 
     padding-left: 10px;
 }
+
 
 /** Icon*/
 
@@ -167,6 +172,38 @@ span.stat {
 
     font-size: 16px;
     font-weight: 500;
+}
+
+/** Sezione Tabella */
+
+.width-col {
+    width: 100px;
+}
+
+.custom-text-table {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.logo-class {
+    display: inline-block;
+    min-height: 30px;
+    min-width: 30px;
+    border-radius: 50%;
+
+    background-image: url(img/class-avatar.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.btn-icons {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: white;
+
+    color: #6c757d;
+    border: 1px solid #6c757d ;
 }
 
 /** Sezione Graphic */

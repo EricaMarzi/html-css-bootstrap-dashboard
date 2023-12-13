@@ -23,9 +23,23 @@
                     <img class="logo-mobile" src="img/mobile-logo.png" alt="Boolean Logo">
                     <div class="search-container">
                         <form action="" class="d-flex">
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                            <input type="text" placeholder="Prova a cercare: Lezioni di Laravel" name="search">
+                            <button class="custom-btn" type="submit"><i class="fa fa-search"></i></button>
+                            <input type="search" placeholder="Prova a cercare: Lezioni di Laravel" name="search">
                         </form>
+
+                        <!--<form class="d-flex" role="search">
+                            <button class="btn custom-btn" type="submit"><i class="fa fa-search"></i></button>
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          </form>-->
+
+                          <!--<form class="container-fluid">
+                            <div class="input-group">
+                                <button class="btn custom-btn" type="submit"><i class="fa fa-search"></i></button>
+                                <input type="search" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                            </div>
+                          </form>-->
+
+
                     </div>
                 </div>
                 <div class="header-right">
@@ -45,7 +59,7 @@
                     </ul>
                 </div>
             </div>
-
+    
         </header>
 
         <div class="layout">
@@ -118,34 +132,223 @@
                                 <div class="card-header">
                                 <h2>Prossime Classi</h2>
                                 </div>
-                                <div class="card-body">
-                                    <table class="table">
+                                <div class="card-body custom-text-table">
+                                    <table class="table text-center">
                                         <thead>
                                         <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">First</th>
-                                            <th scope="col">Last</th>
-                                            <th scope="col">Handle</th>
+                                            <td scope="col" class="text-start">Nome</td>
+                                            <td scope="col" class="width-col">
+                                                <span class="d-none d-md-inline">Data Inizio</span>
+                                            </td>
+                                            <td scope="col" class="width-col">
+                                                <span class="d-none d-md-inline">ROI</span>
+                                            </td>
+                                            <td scope="col" class="width-col">Stato</td>
+                                            <td scope="col" class="width-col">Azioni</td>
                                         </tr>
                                         </thead>
                                         <tbody>
                                         <tr>
-                                            <th scope="row">1</th>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
+                                            <td scope="row">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <div class="logo-class"></div>
+                                                    <span>Classe 75</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="d-none d-md-inline">15 Feb 2021</span>
+                                            </td>
+                                            <td>
+                                                <span class="d-none d-md-inline">20%</span>
+                                            </td>
+                                            <td>
+                                                <span class="badge rounded-pill text-bg-success">Done</span>
+                                            </td>
+                                            <td>
+                                                <button class="btn-icons">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </button>
+                                                <button class="btn-icons">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">2</th>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
+                                            <td scope="row">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <div class="logo-class"></div>
+                                                    <span>Classe 76</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="d-none d-md-inline">16 Feb 2021</span>
+                                            </td>
+                                            <td>
+                                                <span class="d-none d-md-inline">20%</span>
+                                            </td>
+                                            <td>
+                                                <span class="badge rounded-pill text-bg-success">Done</span>
+                                            </td>
+                                            <td>
+                                                <button class="btn-icons">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </button>
+                                                <button class="btn-icons">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">3</th>
-                                            <td colspan="2">Larry the Bird</td>
-                                            <td>@twitter</td>
+                                            <td scope="row">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <div class="logo-class"></div>
+                                                    <span>Classe 77</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="d-none d-md-inline">17 Feb 2021</span>
+                                            </td>
+                                            <td>
+                                                <span class="d-none d-md-inline">20%</span>
+                                            </td>
+                                            <td>
+                                                <span class="badge rounded-pill text-bg-warning text-white">Process</span>
+                                            </td>
+                                            <td>
+                                                <button class="btn-icons">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </button>
+                                                <button class="btn-icons">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
                                         </tr>
+                                        <tr>
+                                            <td scope="row">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <div class="logo-class"></div>
+                                                    <span>Classe 78</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="d-none d-md-inline">18 Feb 2021</span>
+                                            </td>
+                                            <td>
+                                                <span class="d-none d-md-inline">20%</span>
+                                            </td>
+                                            <td>
+                                                <span class="badge rounded-pill text-bg-success">Done</span>
+                                            </td>
+                                            <td>
+                                                <button class="btn-icons">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </button>
+                                                <button class="btn-icons">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <div class="logo-class"></div>
+                                                    <span>Classe 79</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="d-none d-md-inline">19 Feb 2021</span>
+                                            </td>
+                                            <td>
+                                                <span class="d-none d-md-inline">20%</span>
+                                            </td>
+                                            <td>
+                                                <span class="badge rounded-pill text-bg-danger">Failed</span>
+                                            </td>
+                                            <td>
+                                                <button class="btn-icons">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </button>
+                                                <button class="btn-icons">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <div class="logo-class"></div>
+                                                    <span>Classe 80</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="d-none d-md-inline">20 Feb 2021</span>
+                                            </td>
+                                            <td>
+                                                <span class="d-none d-md-inline">20%</span>
+                                            </td>
+                                            <td>
+                                                <span class="badge rounded-pill text-bg-success">Done</span>
+                                            </td>
+                                            <td>
+                                                <button class="btn-icons">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </button>
+                                                <button class="btn-icons">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <div class="logo-class"></div>
+                                                    <span>Classe 81</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="d-none d-md-inline">21 Feb 2021</span>
+                                            </td>
+                                            <td>
+                                                <span class="d-none d-md-inline">20%</span>
+                                            </td>
+                                            <td>
+                                                <span class="badge rounded-pill text-bg-danger">Failed</span>
+                                            </td>
+                                            <td>
+                                                <button class="btn-icons">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </button>
+                                                <button class="btn-icons">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <div class="logo-class"></div>
+                                                    <span>Classe 82</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="d-none d-md-inline">22 Feb 2021</span>
+                                            </td>
+                                            <td>
+                                                <span class="d-none d-md-inline">20%</span>
+                                            </td>
+                                            <td>
+                                                <span class="badge rounded-pill text-bg-success">Done</span>
+                                            </td>
+                                            <td>
+                                                <button class="btn-icons">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </button>
+                                                <button class="btn-icons">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                       
                                         </tbody>
                                     </table>
                                 </div>
