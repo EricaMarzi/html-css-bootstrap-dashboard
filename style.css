@@ -185,6 +185,10 @@ span.stat {
     font-size: 40px;
 }
 
+.add-student {
+    width: 768px;
+}
+
 /** Sezione Pills */
 .custom-pills {
     background-color: #165bba;

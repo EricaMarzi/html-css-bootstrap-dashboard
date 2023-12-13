@@ -104,7 +104,126 @@
                     <section class="new-student py-4 order-1">
                         <div class="d-flex align-items-center gap-3">
                             <span class="f-bold">Nuovo Studente </span>
-                            <i class="fa-regular fa-square-plus"></i> <!--Inserire qui offcanvas-->
+
+                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-regular fa-square-plus"></i> </button>
+
+                            <div class="offcanvas offcanvas-end add-student" tabindex="-1"      id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+
+                                <!--Form-->
+                                <div class="offcanvas-body">
+                                    <div class="row">
+
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label for="firstname" class="form-label">Nome</label>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" id="firstname" aria-describedby="basic-addon3 basic-addon4">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label for="lastname" class="form-label">Cognome</label>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" id="lastname" aria-describedby="basic-addon3 basic-addon4">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label for="email" class="form-label">Email</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                                    <input type="text" class="form-control" id="email" aria-label="Email" aria-describedby="basic-addon1">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label for="password" class="form-label">Password</label>
+                                                <div class="input-group">
+                                                    <input type="password" class="form-control" id="password" aria-describedby="basic-addon3 basic-addon4">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="mb-3">
+                                                <label for="address" class="form-label">Indirizzo</label>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" id="address" aria-describedby="basic-addon3 basic-addon4">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label for="city" class="form-label">Città</label>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" id="city" aria-describedby="basic-addon3 basic-addon4">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-4">
+                                            <div class="mb-3">
+                                                <label for="country" class="form-label">Stato</label>
+                                                <div class="input-group">
+                                                    <select class="form-select" id="country" aria-label="Default select example">
+                                                        <option selected>Scegli...</option>
+                                                        <option value="1">Roan</option>
+                                                        <option value="2">Gondor</option>
+                                                        <option value="3">Molise</option>
+                                                      </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-2">
+                                            <div class="mb-3">
+                                                <label for="cap" class="form-label">CAP</label>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" id="cap" aria-describedby="basic-addon3 basic-addon4">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="mb-3">
+                                                <label for="photo" class="form-label">Foto</label>
+                                                <div class="input-group mb-3">
+                                                    <input type="file" class="form-control" id="photo">
+                                                  </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-3 d-flex align-items-center gap-2">
+                                        <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                        <span>Seleziona per proseguire</span>
+                                    </div>
+
+                                    <div class="button-action">
+                                        <button type="button" class="btn btn-primary">Salva</button>
+                                        <button type="button" class="btn btn-warning">Svuota</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </section>
 
