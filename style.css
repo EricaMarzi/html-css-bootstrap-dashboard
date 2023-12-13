@@ -100,15 +100,13 @@ header img.logo-desktop {
     padding-left: 10px;
 }
 
-
 [type="search"] {
     height: 40px;
     background-color: lightgray;
     border-radius: 0 10px 10px 0;
     border: 0;
-    width: 400px;  /*! la larghezza è casuale, DA SISTEMARE */
     
-
+    
     padding-left: 10px;
 }
 
