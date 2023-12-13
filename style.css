@@ -105,7 +105,7 @@ header img.logo-desktop {
     background-color: lightgray;
     border-radius: 0 10px 10px 0;
     border: 0;
-    
+    width: 400px;
     
     padding-left: 10px;
 }
